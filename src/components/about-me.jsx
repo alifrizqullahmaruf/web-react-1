@@ -14,11 +14,12 @@ export default function AboutMe() {
             <p>We reached here with our hard work and dedication</p>
           </div>
           <div className="col">
-            <ul className="col-2">
-              {CARD_ABOUTME.map((conceptItem)=>(
-                <CardAboutMe key={conceptItem.desc} {...conceptItem}/>
-              ))}
-            </ul>
+            <div className="row row-cols-lg-2">
+              <div className="col"><CardAboutMe {...CARD_ABOUTME[0]}/></div>
+              <div className="col"><CardAboutMe {...CARD_ABOUTME[1]}/></div>
+              <div className="col"><CardAboutMe {...CARD_ABOUTME[2]}/></div>
+              <div className="col"><CardAboutMe {...CARD_ABOUTME[3]}/></div>
+            </div>
           </div>
         </div>
       </div>
